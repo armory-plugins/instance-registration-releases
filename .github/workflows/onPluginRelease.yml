@@ -44,12 +44,17 @@ jobs:
       - name: add release to plugin repo
         run: |
           echo "Go run addPluginReleaseToRepo: $(go run .github/workflows/addPluginReleaseToRepo.go '${{ toJson(github.event.client_payload) }}')"
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Add plugin release ${{ github.event.client_payload.released.id }} ${{ github.event.client_payload.released.releases[0].version }}" -a
-      - name: push changes
-        uses: ad-m/github-push-action@main
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Add plugin release ${{ github.event.client_payload.released.id }} ${{ github.event.client_payload.released.releases[0].version }}
+          committer: action@github.com
+          author: GitHub Action
+          branch: release-plugin-${{ github.event.client_payload.released.releases[0].version }}
+          delete-branch: true
+          title: Release Plugin ${{ github.event.client_payload.released.releases[0].version }}
+          team-reviewers: |
+            owners
+            maintainers
+          draft: false
