@@ -1,0 +1,8 @@
+[
+    {
+        "id": "Armory.InstanceRegistration",
+        "description": "A plugin for registering a Spinnaker instance with Armory.",
+        "provider": "TODO",
+        "releases": []
+    }
+]
