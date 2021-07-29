@@ -1,8 +1,17 @@
 [
     {
-        "id": "Armory.InstanceRegistration",
-        "description": "A plugin for registering a Spinnaker instance with Armory.",
-        "provider": "TODO",
-        "releases": []
+      "id": "Armory.InstanceRegistration",
+      "description": "An Armory plugin that checks whether a Spinnaker instance is registered with us.",
+      "provider": "https://github.com/armory-io",
+      "releases": [
+        {
+          "version": "0.0.4",
+          "date": "2021-07-29T15:17:33.247762Z",
+          "requires": "gate>=0.0.0",
+          "sha512sum": "ce4f8573962b4754cd676bb705b819374d263c88d6b411437a362284be9f1bc7d496fa414469a9ea76c900acc1803dcc36d7b6e29d3a189d0fac17497038f29d",
+          "state": "",
+          "url": "https://github.com/armory-plugins/instance-registration-releases/releases/download/v0.0.4/instance-registration-v0.0.4.zip"
+        }
+      ]
     }
-]
+  ]
