@@ -49,8 +49,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Add plugin release ${{ github.event.client_payload.released.id }} ${{ github.event.client_payload.released.releases[0].version }}
-          committer: action@github.com
-          author: GitHub Action
+          committer: actions-user <noreply@github.com>
+          author: actions-user <noreply@github.com>
           branch: release-plugin-${{ github.event.client_payload.released.releases[0].version }}
           delete-branch: true
           title: Release Plugin ${{ github.event.client_payload.released.releases[0].version }}
