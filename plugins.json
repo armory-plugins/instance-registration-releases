@@ -5,6 +5,14 @@
       "provider": "https://github.com/armory-io",
       "releases": [
         {
+          "version": "0.0.6",
+          "date": "2021-08-06T19:55:49.186293Z",
+          "requires": "gate>=0.0.0",
+          "sha512sum": "3a167fdd57fe25efc3794a68f24da16fcb60614155c503f06b57508badf9fcadd37e9112af487f8ea0452eb41cbaba5f452e2b413e70b0b87cadd5ec96e052de",
+          "state": "",
+          "url": "https://github.com/armory-plugins/instance-registration-releases/releases/download/v0.0.6/instance-registration-v0.0.6.zip"
+        },
+        {
           "version": "0.0.5",
           "date": "2021-08-06T13:45:53.669085Z",
           "requires": "gate>=0.0.0",
