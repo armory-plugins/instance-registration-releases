@@ -13,6 +13,14 @@
           "url": "https://github.com/armory-plugins/instance-registration-releases/releases/download/v0.0.9/instance-registration-v0.0.9.zip"
         },
         {
+          "version": "0.0.8",
+          "date": "2021-08-13T13:21:01.642984Z",
+          "requires": "gate>=0.0.0",
+          "sha512sum": "b8f97652fbfaeb94c4743fe53caa7969d971cf94db299f0bce4b6b42e56cd793feb7921ad218a9efd38de17e7e19f84899b784e5bd9d88155c451e7bf6ed0c4a",
+          "state": "",
+          "url": "https://github.com/armory-plugins/instance-registration-releases/releases/download/v0.0.8/instance-registration-v0.0.8.zip"
+        },
+        {
           "version": "0.0.7",
           "date": "2021-08-12T17:53:21.410448Z",
           "requires": "gate>=0.0.0",
